@@ -1,6 +1,7 @@
 # NTHU Web Development Study Club
 * National TsingHua University
 * Fall, 2015
+* Convener: Chun You, Yang
 * Subjects
     * HTML
     * CSS
