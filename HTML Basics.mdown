@@ -1,0 +1,132 @@
+#HTML Basics
+* HTML = Hyper Text Markup Language
+
+##Syntax Basics
+* A HTML document is made up by **HTML elements**.
+* HTML elements format:
+```
+<tag>content</tag>
+```
+* Always use lower case for the tags.
+* HTML elements can be nested.
+```
+<tagA>
+	...
+	<tagB>
+		...
+	</tagB>
+</tagA>
+```
+* Elements can have some **attributes** by adding it in the start tag.
+```
+<tag attribute="value">content</tag>
+```
+* Comment
+```
+<!--Some comments-->
+```
+
+##Document Structure
+* A basic HTML document will look like this:
+```
+<!DOCTYPE html>
+<html>
+<head></head>
+<body></body>
+</html>
+```
+* `<!DOCTYPE html>`: Type declaration.
+* `<html>`: The main tag of a html document.
+* `<head>`: The metadata of the document.
+* `<body>`: The content of the web page.
+
+## Texts
+###Paragraphs
+* Paragraph: `<p>`
+```
+<p>Content</p>
+```
+* Line Break: `<br>`
+```
+<p>This is one line <br> This is a new line.</p>
+```
+* Horizontal Rules: `<hr>`
+```
+<p>This is a paragraph <hr> There's a horizontal line up there.</p>
+```
+###Paragraph Styling
+* Bold: `<b>`(stylistically offset) or `<strong>`(stronger emphasis)
+```
+<p>The word <b>BOLD</b> will be very <strong>black</strong>.</p>
+```
+* Italic: `<i>`(italic) or `<em>`(emphasis)
+```
+<p>The word <i>Italic</i> is <em>not straight</em>.</p>
+```
+###Headings
+* Heading = Title
+* Lv.1 `h1` ~ Lv.6 `h6`
+```
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+##Links
+* Link: `<a>`
+* Hyperlink REFerence attribute: `href`
+```
+<a href="http://www.nthu.edu.tw">National Tsing Hua University</a>
+```
+* Different Hyperlink
+    * Normal HTTP: `http://www.google.com`
+    * Local Link: `/123.jpg`
+    * Mail To: `mailto:chunyou0830@gmail.com`
+* Link Target attribute: `target`
+    * `_self`: Open link in current window.
+    * `_blank`: Open link in new window.
+```
+<a href="http://www.google.com" target="_blank">Google in new window</a>
+<a href="http://www.google.com" target="_self">Google in current window</a>
+```
+
+##Images
+* Image: `<img>`
+* Image Source attribute: `src`
+```
+<img src="http://bryn.me/wp-content/uploads/2008/09/tatoo-html.jpg">
+```
+* Alternatives attribute: `alt`
+```
+<img src="http://bryn.me/wp-content/uploads/2008/09/tatoo.jpg" alt="HTML Tatoo">
+```
+* Title: `title`
+```
+<img src="http://bryn.me/wp-content/uploads/2008/09/tatoo-html.jpg" alt="HTML Tatoo" title="HTML Tatoo (Mouse Hover)">
+```
+
+##Lists
+* Orderd list (1,A,a...): `<ol>`
+    * Type attribute: `type`
+        * `1`: 1,2,3...
+        * `A`: A,B,C...
+        * `a`: a,b,c...
+        * `I`: I,II,III...
+        * `i`: i,ii,iii...
+* Unordered list (‧,‧,‧...): `<ul>`
+* List item: `<li>`
+```
+<ol>
+	<li>NTHU</li>
+	<li>NTU</li>
+	<li>NTNU</li>
+</ol>
+<ul>
+	<li>Apple</li>
+	<li>Banana</li>
+	<li>Cat</li>
+</ul>
+```
