@@ -72,10 +72,10 @@ p {
 ```
 * Inherit: Let the attribute value be `inherit` to get the stype of the parent elements.
 * Mouse action:
-    *`:hover`: The mouse os on the element.
-    *`:active`: The element has been clicked.
-    *`:focus`L The focus point is on the element.
-    *`:visited`: Have been visited the link.
+    * `:hover`: The mouse os on the element.
+    * `:active`: The element has been clicked.
+    * `:focus`L The focus point is on the element.
+    * `:visited`: Have been visited the link.
 
 ##Color
 * `color`: The text color in the element. Value can be:
