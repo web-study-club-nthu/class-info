@@ -53,9 +53,12 @@ p {
 ```
 <li>
     <a></a>          -> Descendant & Child
-    <p>
+
+    <li>
         <a></a>      -> Descendant
-    </p>
+    </li>
+
+    <a></a>          -> Descendant & Child
 </li>
 ```
 * Adjacent sibling V.S. General sibling
@@ -63,4 +66,10 @@ p {
 <h1></h1>
 <p></p>              -> Adjacent & General
 <p></p>              -> Adjacent
+<h1></h1>
+<p></p>              -> Adjacent & General
+<p></p>              -> Adjacent
 ```
+
+##Inherit
+* Let the attribute value be `inherit` to get the stype of the parent elements.
