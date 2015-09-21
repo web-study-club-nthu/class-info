@@ -41,5 +41,11 @@ p {
 ##CSS Selector
 | Type | Meaning | Example |
 | ---- | ------- | ------- |
-|Global|Select all elements|`*{}`|
-|Type|Find the same elements|`h1{}`|
+|Global|Select all elements|`*`|
+|Type|Find the same elements|`h1`|
+|Class|Find elements with same class|`.notes`|
+|ID|Find elements with same id|`#intro`|
+|Child|Find elements that is the **child of** one element|`li>a`|
+|Descendant|Find elements that is **inside of** one element|`li a`|
+|Adjacent sibling|Find elements **just next to** another element|`h1+p`|
+|General sibling|Find elements **after** another element|`h1~p`|
