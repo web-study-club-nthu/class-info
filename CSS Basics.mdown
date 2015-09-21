@@ -70,6 +70,16 @@ p {
 <p></p>              -> Adjacent & General
 <p></p>              -> Adjacent
 ```
+* Inherit: Let the attribute value be `inherit` to get the stype of the parent elements.
 
-##Inherit
-* Let the attribute value be `inherit` to get the stype of the parent elements.
+##Color
+* Value can be:
+    * RGB: `rgb(100,100,90)`
+    * RGBA: `rgba(1,2,3,0.5)`
+    * HEX: `#EE3E80`
+    * Name: `red`
+* `color`: The text color in the element. 
+* `background-color`: The background color of the block
+* `opacity`: The opacity of the color.
+
+##Text
