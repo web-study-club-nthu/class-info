@@ -71,6 +71,11 @@ p {
 <p></p>              -> Adjacent
 ```
 * Inherit: Let the attribute value be `inherit` to get the stype of the parent elements.
+* Mouse action:
+    *`:hover`: The mouse os on the element.
+    *`:active`: The element has been clicked.
+    *`:focus`L The focus point is on the element.
+    *`:visited`: Have been visited the link.
 
 ##Color
 * `color`: The text color in the element. Value can be:
@@ -100,11 +105,14 @@ p {
     * `overline`
     * `linethrough`
     * `blink` (Not recommended)
+* `text-shadow`: The shadow of the text. Value **should** be: `horizontal vertical (blur) color`
+
 ###Spacing
 * Value usually use `em`.
 * `line-height`: The space between lines.
 * `letter-spacing`: Space between letters (alphabets).
 * `word-spacing`: Space between words (vocabulary).
+
 ###Align and positioning
 * `text-align`: The horizontal align. Value can be
     * `left`
