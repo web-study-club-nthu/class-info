@@ -37,3 +37,7 @@ p {
 	}
 </style>
 ```
+
+##CSS Selector
+|Global|Select all elements|`*{}`|
+|Type|Find the same elements|`h1{}`|
