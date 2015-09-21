@@ -7,30 +7,29 @@
 ##Syntax Basics
 * A CSS document is made up by **CSS selector** and **declarations**. Declaration is made up by **attribute** and a **value**.
 * A CSS rule format:
+    * `p` = selector
+    * `font-family: Arial;` = declaration
+        * `font-family` = attribute
+        * `Arial` = value
 ```
 p {
 	font-family: Arial;
 }
 ```
 
-    * `p` = selector
-    * `font-family: Arial;` = declaration
-        * `font-family` = attribute
-        * `Arial` = value
-
 ## Use in HTML
 ### Outer CSS
 * Recommended!
-* We have to link it to the HTML document. In `<head>`, we add:
+* Link a CSS file to a HTML document: `link` (Add in `<head>`)
+    * `href`: The route of the css file.
+    * `type`: The file type of the link.
+    * `rel`: The relationship of the link to the HTML.
 ```
 <link href="styles.css" type="text/css" rel="stylesheet">
 ```
 
-    * `href`: The route of the css file.
-    * `type`: The file type of the link.
-    * `rel`: The relationship of the link to the HTML.
 ### Inner CSS
-* We can still add some simple css inside HTML file. In `<head>`, we add:
+* Add some simple CSS inside HTML file: `style` (Add in `<head>`)
 ```
 <style type="text/css">
 	p {
