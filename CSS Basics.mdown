@@ -12,6 +12,7 @@ p {
 	font-family: Arial;
 }
 ```
+
     * `p` = selector
     * `font-family: Arial;` = declaration
         * `font-family` = attribute
@@ -24,6 +25,7 @@ p {
 ```
 <link href="styles.css" type="text/css" rel="stylesheet">
 ```
+
     * `href`: The route of the css file.
     * `type`: The file type of the link.
     * `rel`: The relationship of the link to the HTML.
