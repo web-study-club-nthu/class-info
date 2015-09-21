@@ -73,13 +73,32 @@ p {
 * Inherit: Let the attribute value be `inherit` to get the stype of the parent elements.
 
 ##Color
-* Value can be:
+* `color`: The text color in the element. Value can be:
     * RGB: `rgb(100,100,90)`
     * RGBA: `rgba(1,2,3,0.5)`
     * HEX: `#EE3E80`
     * Name: `red`
-* `color`: The text color in the element. 
-* `background-color`: The background color of the block
-* `opacity`: The opacity of the color.
+* `background-color`: The background color of the block. Value can be:
+    * RGB: `rgb(100,100,90)`
+    * RGBA: `rgba(1,2,3,0.5)`
+    * HEX: `#EE3E80`
+    * Name: `red`
+* `opacity`: The opacity of the color. Value can be `0`~`1`
 
 ##Text
+* `font-family`: The font of the text.
+* `font-size`: The size of the text. Value can be
+    * pt: Points on the screen
+    * % :Compare with 16pt
+    * em
+* `font-weight`: Bold of the text. Value can be `normal`, `bold` or `100`~`900`.
+* `font-style`: To make the text italic. Value can be `normal`, `italic`.
+* `text-decoration`: To make special decorations like underline. Value can be
+    * `none`
+    * `underline`
+    * `overline`
+    * `linethrough`
+    * `blink` (Not recommended)
+* `line-height`: The space between lines.
+* `letter-spacing`: Space between letters (alphabets).
+* `word-spacing`: Space between words (vocabulary).
