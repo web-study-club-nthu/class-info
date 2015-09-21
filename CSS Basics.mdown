@@ -39,5 +39,7 @@ p {
 ```
 
 ##CSS Selector
+| Type | Meaning | Example |
+| ---- | ------- | ------- |
 |Global|Select all elements|`*{}`|
 |Type|Find the same elements|`h1{}`|
