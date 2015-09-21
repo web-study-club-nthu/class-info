@@ -49,3 +49,18 @@ p {
 |Descendant|Find elements that is **inside of** one element|`li a`|
 |Adjacent sibling|Find elements **just next to** another element|`h1+p`|
 |General sibling|Find elements **after** another element|`h1~p`|
+* Child V.S. Descendant:
+```
+<li>
+    <a></a>          -> Descendant & Child
+    <p>
+        <a></a>      -> Descendant
+    </p>
+</li>
+```
+* Adjacent sibling V.S. General sibling
+```
+<h1></h1>
+<p></p>              -> Adjacent & General
+<p></p>              -> Adjacent
+```
