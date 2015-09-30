@@ -42,6 +42,9 @@
 * `<html>`: The main tag of a html document.
 * `<head>`: The metadata of the document.
 * `<body>`: The content of the web page.
+* Basic element recognizing attributes:
+    * `class`: The type of the element. ***It's not unique.***
+    * `id`: The ***unique*** name of the element.
 
 ## Texts
 ###Paragraphs
@@ -106,7 +109,7 @@
 ```
 <img src="http://bryn.me/wp-content/uploads/2008/09/tatoo.jpg" alt="HTML Tatoo">
 ```
-* Title: `title`
+* Title attribute: `title`
 ```
 <img src="http://bryn.me/wp-content/uploads/2008/09/tatoo-html.jpg" alt="HTML Tatoo" title="HTML Tatoo (Mouse Hover)">
 ```
@@ -209,13 +212,35 @@
 ```
 <form>
     <h1>Not Actually Working - Member Sign Up Page</h1>
-    <p><lable>Member ID: <input type="text"/></lable></p>
-    <p><lable>Email: <input type="email" required="required"/></lable></p>
-    <p><lable>Password: <input type="password"/></lable></p>
+    <p><lable>
+        Member ID:
+        <input type="text" name="id"/>
+    </lable></p>
+
+    <p><lable>
+        Email:
+        <input type="email" name="email" required="required"/>
+    </lable></p>
+
+    <p><lable>
+        Password:
+        <input type="password" name="pswd"/>
+    </lable></p>
+
+    <p><lable>
+        Gender:
+        <input type="radio" name="gender" value="boy"/> Male
+        <input type="radio" name="gender" value="girl"/> Female
+        <input type="radio" name="gender" value="other"/> Others
+    </lable></p>
+
+    <p><lable>
+        Photo upload:
+        <input type="file" name="photo"/>
+    </lable></p>
     <p>
-        Self introduction
-        <br>
-        <textarea></textarea>
+        Self introduction<br>
+        <textarea name="intro"></textarea>
     </p>
     <input type="submit" value="Send!">
 </form>
