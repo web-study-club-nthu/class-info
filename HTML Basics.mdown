@@ -183,6 +183,7 @@
     * Method attribute: `method`
         * `get`
         * `post`
+
 ### Input elements
 * A basic input element: `<input>`
     * Type attribute: `type`, means the input type of the input.
@@ -205,6 +206,7 @@
 * Submit button: `<input type="submit"/>`
     * Value attribute: `value`, means the words displaying on the button.
 * Button: `<button>`
+
 ### Validation and Styling
 * Only in HTML5
 * Required attribute: `required`, value can only be `required`
