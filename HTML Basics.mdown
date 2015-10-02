@@ -175,9 +175,6 @@
         <td>2,2</td>
     </tr>
 </table>
-<<<<<<< HEAD
-```
-=======
 ```
 
 ##Form
@@ -248,4 +245,3 @@
     <input type="submit" value="Send!">
 </form>
 ```
->>>>>>> origin/master
