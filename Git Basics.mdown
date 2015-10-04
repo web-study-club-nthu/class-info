@@ -20,7 +20,7 @@ final_bug_fix_last.cpp
     * Nonlinear Development: **branch** and **merge**.
     ```
     -----O-----O-----O-----O----->
-         |--------o--------|
+         └--------o--------┘
     ```
     * Distributed Development mode: Everyone has a copy.
     * History Protection: Everyone has a hash id when committing. Can nearly **never** be changed.
