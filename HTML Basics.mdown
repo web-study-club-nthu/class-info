@@ -190,7 +190,6 @@
     * Name attribute: `name`, means the group of the options.
     * Value attribute: `value`, means the data to send.
 * Single line text: `<input type="text"/>` / `<input type="email"/>` / `<input type="url"/>`
-* Single line text: `<input type="text"/>`
 * Single line private text: `<input type="password"/>`
     * Size attribute: `size`
     * Max Length attribute: `maxlength`
