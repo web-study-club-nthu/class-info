@@ -132,7 +132,7 @@ p {
     * `border-width`
     * `border-style`: `solid`, `dotted`, `dashed`, `double`...
     * `border-color`
-    * `border-radius`: Note in clockwise, top-right ~ top-left
+    * `border-radius`: Note in clockwise, top-left ~ bottom-left
 * `padding`: The inside space. Note in clockwise.
     * `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
 * `margin`: The outside space. Note in clockwise.
