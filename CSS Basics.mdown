@@ -54,9 +54,9 @@ p {
 <li>
     <a></a>          -> Descendant & Child
 
-    <li>
+    <p>
         <a></a>      -> Descendant
-    </li>
+    </p>
 
     <a></a>          -> Descendant & Child
 </li>
