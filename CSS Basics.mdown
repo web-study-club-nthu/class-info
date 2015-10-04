@@ -126,14 +126,6 @@ p {
     * Much more.
 * `text-indent`: The position of the first line. Value usually use `em`.
 
-##List, Table and Form
-###List 
-* `list-style-type`
-    * In `ul`, value can be: `disc`, `circle`, `square`
-    * In `ol`, value can be: `decimal`, `decimal-leading-zero`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`
-* `list-style-image`
-
-
 ##Boxing
 * `width`, `height`
 * `border`: The line.
@@ -154,3 +146,24 @@ p {
 |         |
 └---------┘
 ```
+
+##List, Table and Form
+###List 
+* `list-style-type`
+    * In `ul`, value can be: `disc`, `circle`, `square`
+    * In `ol`, value can be: `decimal`, `decimal-leading-zero`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`
+
+###Table
+* `width`
+* `padding`
+* `border`
+* `text-align`
+* `background-color`
+* `:hover`
+
+###Form
+* `width`
+* `color`
+* `background-color`
+* `border`, `border-radius`
+* `padding`
