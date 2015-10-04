@@ -64,11 +64,11 @@ p {
 * Adjacent sibling V.S. General sibling
 ```
 <h1></h1>
-<p></p>              -> Adjacent & General
-<p></p>              -> Adjacent
+<p></p>              -> General & Adjacent
+<p></p>              -> General
 <h1></h1>
-<p></p>              -> Adjacent & General
-<p></p>              -> Adjacent
+<p></p>              -> General & Adjacent
+<p></p>              -> General
 ```
 * Inherit: Let the attribute value be `inherit` to get the stype of the parent elements.
 * Mouse action:
