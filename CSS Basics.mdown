@@ -127,7 +127,7 @@ p {
 * `text-indent`: The position of the first line. Value usually use `em`.
 
 ##List, Table and Form
-###List
+###List 
 * `list-style-type`
     * In `ul`, value can be: `disc`, `circle`, `square`
     * In `ol`, value can be: `decimal`, `decimal-leading-zero`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`
