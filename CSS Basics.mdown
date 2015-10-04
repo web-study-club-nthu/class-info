@@ -74,7 +74,7 @@ p {
 * Mouse action:
     * `:hover`: The mouse os on the element.
     * `:active`: The element has been clicked.
-    * `:focus`L The focus point is on the element.
+    * `:focus`: The focus point is on the element.
     * `:visited`: Have been visited the link.
 
 ##Color
