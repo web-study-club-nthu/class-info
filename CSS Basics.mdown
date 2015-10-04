@@ -103,7 +103,7 @@ p {
     * `none`
     * `underline`
     * `overline`
-    * `linethrough`
+    * `line-through`
     * `blink` (Not recommended)
 * `text-shadow`: The shadow of the text. Value **should** be: `horizontal vertical (blur) color`
 
