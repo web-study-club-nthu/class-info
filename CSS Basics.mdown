@@ -125,3 +125,32 @@ p {
     * `text-bottom`
     * Much more.
 * `text-indent`: The position of the first line. Value usually use `em`.
+
+##List, Table and Form
+###List
+* `list-style-type`
+    * In `ul`, value can be: `disc`, `circle`, `square`
+    * In `ol`, value can be: `decimal`, `decimal-leading-zero`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`
+* `list-style-image`
+
+
+##Boxing
+* `width`, `height`
+* `border`: The line.
+    * `border-width`
+    * `border-style`: `solid`, `dotted`, `dashed`, `double`...
+    * `border-color`
+    * `border-radius`: Note in clockwise, top-right ~ top-left
+* `padding`: The inside space. Note in clockwise.
+    * `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
+* `margin`: The outside space. Note in clockwise.
+    * `margin-top`, `margin-right`, `margin-bottom`, `margin-left`
+```
+└---------┘
+             <- Margin (Space between other box and border)
+┌---------┐  <- Border 
+|        <┼---- Padding (Space between content and border)
+| content |
+|         |
+└---------┘
+```
