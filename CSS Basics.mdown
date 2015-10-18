@@ -94,9 +94,10 @@ p {
 ###Basics
 * `font-family`: The font of the text.
 * `font-size`: The size of the text. Value can be
-    * pt: Points on the screen
-    * % :Compare with 16pt
-    * em
+    * px: Pixel on screen
+    * pt: Measurements for printing, 1pt = 1/72 inch
+    * %: Compare with 16pt
+    * em: Same as percent, 1em=16pt
 * `font-weight`: Bold of the text. Value can be `normal`, `bold` or `100`~`900`.
 * `font-style`: To make the text italic. Value can be `normal`, `italic`.
 * `text-decoration`: To make special decorations like underline. Value can be
@@ -104,27 +105,18 @@ p {
     * `underline`
     * `overline`
     * `line-through`
-    * `blink` (Not recommended)
 * `text-shadow`: The shadow of the text. Value **should** be: `horizontal vertical (blur) color`
 
-###Spacing
+###Spacing and Align
 * Value usually use `em`.
 * `line-height`: The space between lines.
 * `letter-spacing`: Space between letters (alphabets).
 * `word-spacing`: Space between words (vocabulary).
-
-###Align and positioning
 * `text-align`: The horizontal align. Value can be
     * `left`
     * `right`
     * `center`
     * `justify`
-* `vertical-align`: The vertical align with images or other div. Value can be
-    * `baseline`
-    * `text-top`
-    * `text-bottom`
-    * Much more.
-* `text-indent`: The position of the first line. Value usually use `em`.
 
 ##Boxing
 * `width`, `height`
@@ -132,7 +124,7 @@ p {
     * `border-width`
     * `border-style`: `solid`, `dotted`, `dashed`, `double`...
     * `border-color`
-    * `border-radius`: Note in clockwise, top-left ~ bottom-left
+    * `border-radius`: Note in clockwise, top-right ~ top-left
 * `padding`: The inside space. Note in clockwise.
     * `padding-top`, `padding-right`, `padding-bottom`, `padding-left`
 * `margin`: The outside space. Note in clockwise.
@@ -160,6 +152,7 @@ p {
 * `text-align`
 * `background-color`
 * `:hover`
+* `border-collapse`: To let every td shares the border or have their own border. Valie can be `collapse` or `separate`.
 
 ###Form
 * `width`
@@ -167,3 +160,18 @@ p {
 * `background-color`
 * `border`, `border-radius`
 * `padding`
+
+##Images
+###Size and Positioning
+* `width`, `height`
+* `vertical-align`: The vertical align for images. Value can be
+    * `baseline`
+    * `text-top`
+    * `text-bottom`
+    * Much more.
+
+###Background Images
+* `background-image`: Vale should be `url("...")`
+* `background-repeat`: Value should be `repeat`, `repeat-x`, `repeat-y`, `no-repeat`
+* `background-attachment`: To let the background fixed or scrolled while the page was scrolled. Value should be `fixed` or `scroll`.
+* `background-position`: Value should be `left/center/right` and `top/center/bottom`
