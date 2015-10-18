@@ -175,3 +175,16 @@ p {
 * `background-repeat`: Value should be `repeat`, `repeat-x`, `repeat-y`, `no-repeat`
 * `background-attachment`: To let the background fixed or scrolled while the page was scrolled. Value should be `fixed` or `scroll`.
 * `background-position`: Value should be `left/center/right` and `top/center/bottom`
+
+##Typesetting
+###Concepts
+* Block elements in HTML: `<h1>`, `<p>`, `<ul>`, `<li>`...
+* Inline elements in HTML: `<img>`, `<b>`, `<i>`...
+
+###Position
+* `position`: The positioning method for elements. Value can be:
+    * `static`: Default positions. For block elements, every element possesses one line.
+    * `relative`: The relative position comparing with the position of `static`. Use `top` and `left` to set the new position.
+    * `absolute`: Similar with relative, but the block element will not have any effect to the original static flow.
+    * `fixed`: Similar with absolute, but when the web page was scrolled down, the element will float above the page and remain the same position. The effect is similar to `background-image: fixed;`
+* `z-index`: The stacking order when elements are on the same position. The  order will be igher if the z-index is higher. The value can be any number.
