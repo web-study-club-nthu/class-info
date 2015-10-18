@@ -1,0 +1,113 @@
+.container{
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+}
+
+.container-wide{
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;	
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Noto Sans CJK TC Black;
+}
+
+p, a, table, ul, ol{
+	font-family: Noto Sans CJK TC Light;
+}
+
+p{
+	line-height: 1.5em;
+}
+
+table{
+	border-collapse:collapse; 
+}
+
+td, th{
+	border-color: black;
+	border-style: dotted;
+	border-width: 1px;
+	padding: 5px 5px 5px 5px;
+	line-height: 1.5em;
+}
+
+th{
+	background-color: #CCC;
+	font-weight: 900;
+	font-family: Noto Sans CJK TC Medium;
+}
+
+button, input{
+	border-color: #DDD;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFF;
+	font-size: 1em;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 10px 5px 10px;
+}
+
+button:hover{
+	background-color: #CCC;
+}
+
+button:active{
+	box-shadow: 3px 3px #AAA;
+}
+
+.subtitle{
+	color: white;
+	text-decoration: underline;
+	border-width: 1.5px;
+	border-color: gray;
+	border-style: solid;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 0px 5px 5px; 
+}
+
+.tag{
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	color: white;
+	font-size: 0.7em;
+}
+
+.bg-green{
+	background-color: MediumSeaGreen;
+}
+
+.bg-orange{
+	background-color: Tomato;
+}
+
+.bg-skyblue{
+	background-color: LightSkyBlue;
+}
+
+.bg-steelblue{
+	background-color: SteelBlue;
+}
+
+#headings{
+	text-align: center;
+	font-weight: bolder;	
+	line-height: 1.5em;
+	text-shadow: 2px 2px #CCC;
+}
+
+#email{
+	float: left;
+	width: 75%;
+}
+
+#send{
+	float: left;
+	width: 25%;
+}
+
+#btn-send, #input-email{
+	width: 95%;
+}

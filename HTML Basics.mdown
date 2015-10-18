@@ -145,10 +145,10 @@
 * Table Headeing: `<th>`
 ```
 <table>
-    <th>
-        <td>0,1</td>
-        <td>0,2</td>
-    </th>
+    <td>
+        <th>0,1</th>
+        <th>0,2</th>
+    </td>
     <tr>
         <td>1,1</td>
         <td>1,2</td>
