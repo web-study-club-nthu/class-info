@@ -184,6 +184,15 @@ p {
 ###Position
 * `position`: The positioning method for elements. Value can be:
     * `static`: Default positions. For block elements, every element possesses one line.
+    ```
+    --------------------
+    --------------------
+    ┌──────────────────┐
+    │  blablablablabl  │
+    └──────────────────┘
+    --------------------
+    --------------------
+    ```
     * `relative`: The relative position comparing with the position of `static`. Use `top` and `left` to set the new position.
     * `absolute`: Similar with relative, but the block element will not have any effect to the original static flow.
     * `fixed`: Similar with absolute, but when the web page was scrolled down, the element will float above the page and remain the same position. The effect is similar to `background-image: fixed;`
