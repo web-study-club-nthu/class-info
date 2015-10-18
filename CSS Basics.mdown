@@ -227,3 +227,14 @@ p {
 --------------------
 --------------------
 ```
+* `clear`: The side of the element will be cleared (disallow other elements to appear) if the value is given. Value can be `left, `right`, `both`, `none`.
+
+##Transition
+* `transition-property`: The attribute to transition. Value can be any attribute.
+* `transition-duration`: The duration of the transition animation. Value should be `*s`
+* `transition`: The simplified attribute. Value should be `property duration`, and we can have multiple properties one time.
+* `transition-timing-function`: The animation speed type of the transition. Value can be:
+    * `linear`: same > same > same
+    * `ease-in`:  > same > same
+    * `ease-out`: same > same > slow
+    * `ease-in-out`: slow > same > slow (default)
