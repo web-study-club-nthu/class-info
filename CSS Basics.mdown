@@ -194,7 +194,23 @@ p {
     --------------------
     ```
     * `relative`: The relative position comparing with the position of `static`. Use `top` and `left` to set the new position.
+    ```
+    --------------------
+    --------------------
+    
+      ┌──────────────────┐
+      │  blablablablabl  │
+      └──────────────────┘
+    --------------------
+    --------------------
+    ```
     * `absolute`: Similar with relative, but the block element will not have any effect to the original static flow.
+    ```
+    -------------------- ┌──────────────────┐
+    -------------------- │  blablablablabl  │
+    -------------------- └──────────────────┘
+    --------------------
+    ```
     * `fixed`: Similar with absolute, but when the web page was scrolled down, the element will float above the page and remain the same position. The effect is similar to `background-image: fixed;`
 * `z-index`: The stacking order when elements are on the same position. The  order will be igher if the z-index is higher. The value can be any number.
 ```
