@@ -188,12 +188,17 @@ p {
     * `absolute`: Similar with relative, but the block element will not have any effect to the original static flow.
     * `fixed`: Similar with absolute, but when the web page was scrolled down, the element will float above the page and remain the same position. The effect is similar to `background-image: fixed;`
 * `z-index`: The stacking order when elements are on the same position. The  order will be igher if the z-index is higher. The value can be any number.
+```
+ ┌──────┐
+ │ 5 ┌──────┐
+ └───│  10  │
+     └──────┘
+```
 * `float`: If the element is float and a width was given, the opsition will be beside other elements as it was set.
 ```
-----------┌─────┐
-----------│     │
-----------└─────┘
------------------
------------------
-...
+---------- ┌───────┐
+---------- │ float │
+---------- └───────┘
+--------------------
+--------------------
 ```
