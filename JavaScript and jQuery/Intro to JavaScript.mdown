@@ -1,4 +1,4 @@
-#PART I Introduction to Javascript 
+#PART I - Introduction to Javascript 
 
 Javascript is a powerful language in web applications. It's the programming language of HTML and other web applications. Being easy to learn, we can manipulate HTML and CSS attributes with few lines of codes. In this introduction, we’ll learn the fundamental structure of this language as well as some methods to communicate between Javascript and DOM/CSS attributes. For further reference, just google ”javascript tutorial” and you’ll definitely find tons of examples and tutorials. 
 
