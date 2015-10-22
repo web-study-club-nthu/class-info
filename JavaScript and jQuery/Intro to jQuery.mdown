@@ -50,7 +50,7 @@ $(document).ready(function (){  // $(document) means this document
 });
 ```
 
-C. Changing CSS Properties
+##C. Changing CSS Properties
 
 In this section, we try to change some CSS properties (may be easier than Javascript) by using the .css() method. The basic syntax is like the following:
 
