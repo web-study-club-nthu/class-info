@@ -13,7 +13,7 @@ Please first take a look at these fancy(?) applications on this page: [http://ww
 
 ##A. Variable declarations and Data Types
 
-To declare a variable to use, we use the var keyword, noting that even if you don’t use this keyword is fine, but with some difference in terms of scope.
+To declare a variable to use, we use the `var` keyword, noting that even if you don’t use this keyword is fine, but with some difference in terms of scope.
 
 ```
 var i=0;  // single variable
