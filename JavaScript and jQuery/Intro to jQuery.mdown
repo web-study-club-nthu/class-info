@@ -3,8 +3,11 @@
 jQuery is a compact library of Javascript, which greatly simplifies Javascript programming. In addition, it's easy to learn. Also in this part we assume that you have some basic knowledge about Javascript, HTML, and CSS. Here’s the content we’re going to cover in this part.
 
 A. Selectors
+
 B. Basic Structure: document.ready()
+
 C. Changing CSS Properties
+
 D. Animations
 
 Since jQuery is a library of Javascript, we can use it either by downloading it to your own directory or by making reference to it:
@@ -18,7 +21,7 @@ Just include it by the src attributes:
 <script src="jquery-1.11.3.min.js"></script>
 </head>
 ```
-<Method 2> Including using URL
+<Method 2> Including using Google CDN
 
 ```
 <head>
@@ -52,13 +55,13 @@ $(document).ready(function (){  // $(document) means this document
 
 ##C. Changing CSS Properties
 
-In this section, we try to change some CSS properties (may be easier than Javascript) by using the .css() method. The basic syntax is like the following:
+In this section, we try to change some CSS properties (may be easier than Javascript) by using the `.css()` method. The basic syntax is like the following:
 
 ```
 $(selector).css(‘property’,’value’);
 ```
 
-We can also specify when or under what conditions we will activate this code segment. Here’s use .click() as an example to behave as onClick seen before.
+We can also specify when or under what conditions we will activate this code segment. Here’s use `.click()` as an example to behave as onClick seen before.
 
 ```
 $(‘p’).click(function(){
@@ -66,8 +69,8 @@ $(‘p’).click(function(){
 });
 ```
 
+####A simple example
 ```
-// a simple example
 $(document).ready(function(){  // when the document is ready
 	$(‘#demo’).click(function(){  // select tag with id=”demo”
 		$(this).css('color','yellow');
@@ -78,5 +81,4 @@ $(document).ready(function(){  // when the document is ready
 
 ##D. Animations
 
-Please reference to the example on this website:
-http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation1 . 
+> Please reference to the example on this website: http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_animation1 . 
