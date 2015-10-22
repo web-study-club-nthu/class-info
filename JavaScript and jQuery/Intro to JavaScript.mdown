@@ -1,0 +1,94 @@
+#PART I Introduction to Javascript 
+
+Javascript is a powerful language in web applications. It's the programming language of HTML and other web applications. Being easy to learn, we can manipulate HTML and CSS attributes with few lines of codes. In this introduction, we’ll learn the fundamental structure of this language as well as some methods to communicate between Javascript and DOM/CSS attributes. For further reference, just google ”javascript tutorial” and you’ll definitely find tons of examples and tutorials. 
+
+We now presume you all have learned other programing language such as C/C++ before, so we won't go into details about basic flow controls and arrays, sort of that :) . In this subsection, we'll introduce to you about the followings,
+
+A. Variable declarations and Data Types
+B. Implementing Your Own Functions
+C. Communication between HTML tags/ CSS attributes through Javascript
+Please first take a look at these fancy(?) applications on this page: [http://www.w3schools.com/js/js_intro.asp](http://www.w3schools.com/js/js_intro.asp)
+
+
+##A. Variable declarations and Data Types
+
+To declare a variable to use, we use the var keyword, noting that even if you don’t use this keyword is fine, but with some difference in terms of scope.
+
+```
+var i=0;  // single variable
+var names=[“Andy”,”Tom,”,”Henry”];  // arrays
+```
+
+There are several different data types, but we are able to change their type anytime we want, regardless the type we gave them when we made the declaration.
+
+* string: character string
+* number: floating points; real numbers
+* Boolean: true/false
+
+##B. Implementing Your Own Functions
+
+Before we really go into the way we construct functions, we make a remark that the basic control flows such as if-else, switch-case, and while statements are exactly the same as those in C/C++. We’re not go into details on that; however, we want you to know the for-each loop statement which is a very powerful tool: http://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript .
+
+Come back to functions. If we want to define our own functions, we shall use the following syntax:
+
+```
+function functionName([argument list]){
+	[statements;]
+	[return returnValue;]
+}
+```
+
+Here’s an example whose output is a notion window popping up:
+
+```
+function showAlert(){  // no arguments
+	alert(‘Hello Javascript’);  // popping up window
+	// no return values
+}
+```
+
+```
+function getSum(numArray){
+	var sum=0;
+	
+	// foreach looping
+	for (prop in sum){  // note that prop is of string type
+		sum+=parseInt(prop);  // adding them up in integer form
+} 
+return sum;
+// alert(sum);
+}
+```
+
+> Note. Try F12 on your browser and try out the following function to see what happen. 
+
+```
+// assuming we have a tag with id=”demo”
+console.log(document.getElementById(“demo”)); 
+```
+
+##C. Communication between HTML tags/ CSS attributes through Javascript
+
+###(i) Fetching HTML tag properties (also CSS!)
+
+We’ll introduce the basic process/statements to grab data from HTML DOM. If your HTML tags are well-structured, then it’s easy and convenient to fetch properties of tags with specific id.
+
+```
+// assuming we have the following HTML:
+<p id=”demo” onClick=”changeText()”>Hello World</p>
+```
+
+```
+// then we implement a function to be called:
+function changeText(){
+	var demo=document.getElementById(“demo”);
+	demo.innerHTML=”Hello Javascript!”;
+	demo.style.color=”yellow”;
+}
+```
+
+> Note. Try the following example to get some sense about the keyword this:
+
+```
+<p onClick=”this.innerHTML=’Note the quotes!!’”>Sample Text</p>
+```
