@@ -4,9 +4,10 @@ Javascript is a powerful language in web applications. It's the programming lang
 
 We now presume you all have learned other programing language such as C/C++ before, so we won't go into details about basic flow controls and arrays, sort of that :) . In this subsection, we'll introduce to you about the followings,
 
-A. Variable declarations and Data Types
-B. Implementing Your Own Functions
-C. Communication between HTML tags/ CSS attributes through Javascript
+* A. Variable declarations and Data Types
+* B. Implementing Your Own Functions
+* C. Communication between HTML tags/ CSS attributes through Javascript
+
 Please first take a look at these fancy(?) applications on this page: [http://www.w3schools.com/js/js_intro.asp](http://www.w3schools.com/js/js_intro.asp)
 
 
