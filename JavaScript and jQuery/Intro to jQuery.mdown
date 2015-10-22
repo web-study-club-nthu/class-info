@@ -12,7 +12,7 @@ D. Animations
 
 Since jQuery is a library of Javascript, we can use it either by downloading it to your own directory or by making reference to it:
 
-<Method 1>  Downloading the library to your directory
+####Method 1: Downloading the library to your directory
 
 Just include it by the src attributes:
 
@@ -21,7 +21,7 @@ Just include it by the src attributes:
 <script src="jquery-1.11.3.min.js"></script>
 </head>
 ```
-<Method 2> Including using Google CDN
+####Method 2: Including using Google CDN
 
 ```
 <head>
