@@ -1,4 +1,4 @@
-#PART II jQuery Introduction
+#PART II - jQuery Introduction
 
 jQuery is a compact library of Javascript, which greatly simplifies Javascript programming. In addition, it's easy to learn. Also in this part we assume that you have some basic knowledge about Javascript, HTML, and CSS. Here’s the content we’re going to cover in this part.
 
