@@ -2,7 +2,7 @@
 * National TsingHua University
 * Fall, 2015
 * Convener: ChunYou-Yang
-* Reviewer: ChunYou-Yang, AnTing-Hsu, and more.
+* Reviewer: ChunYou-Yang, AnTing-Hsu, TeCheng-Hsu, and more.
 * Subjects
     * HTML
     * CSS
