@@ -1,3 +1,31 @@
 # XAMPP Installation Guide
 1. Download the latest version of XAMPP from `https://www.apachefriends.org/zh_tw/index.html`
-![XAMPP Website Image](http://imgur.com/3UKmE0S)
+![XAMPP Website Image](http://i.imgur.com/3UKmE0S.png)
+
+2. Start the installation application. Click `Next`.
+![XAMPP Install Image](http://i.imgur.com/3UKmE0S.png)
+
+3. Check if the components are all checked. Then click `Next`.
+![XAMPP Install Image - Components](http://i.imgur.com/NDcoXmu.png)
+
+4. Remains the default folder. Click `Next`.
+![XAMPP Install Image - Folder](http://i.imgur.com/GWRGJDs.png)
+
+5. Unckeck the Bitnami application. Click `Next`.
+![XAMPP Install Image - Bitnami](http://i.imgur.com/YS3UCLP.png)
+
+6. Start the installation
+![XAMPP Install Image - Start install](http://i.imgur.com/WsiHRCO.png)
+![XAMPP Install Image - Start install](http://i.imgur.com/81FwK1f.png)
+
+7. If the Windows Defender pop out, check both options.
+![XAMPP Install Image - Windows Defender](http://i.imgur.com/OGh7wlu.png)
+
+8. Finish the installation and start the control panel.
+![XAMPP Install Image - Finish](http://i.imgur.com/VoF4ruQ.png)
+
+9. The control panel will pop out. Make sure that **Apache** and **MySQL** module are both turned on (with green background color). If not, click the **Start** button on the right.
+![XAMPP Control panel](http://i.imgur.com/duF9GmP.png)
+
+10. Open your browser, go to `localhost` and hit enter. If you see the web page below, then XAMPP was successfully installed and working properly.
+![Loaclhost](http://i.imgur.com/g4sW7ko.png)
