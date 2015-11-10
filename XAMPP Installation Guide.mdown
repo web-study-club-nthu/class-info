@@ -1,6 +1,7 @@
 # XAMPP Installation Guide
 1. Download the latest version of XAMPP from `https://www.apachefriends.org/zh_tw/index.html`
 ![XAMPP Website Image](http://i.imgur.com/3UKmE0S.png)
+<<<<<<< HEAD
 
 2. Start the installation application. Click `Next`.
 ![XAMPP Install Image](http://i.imgur.com/3UKmE0S.png)
@@ -29,3 +30,5 @@
 
 10. Open your browser, go to `localhost` and hit enter. If you see the web page below, then XAMPP was successfully installed and working properly.
 ![Loaclhost](http://i.imgur.com/g4sW7ko.png)
+=======
+>>>>>>> origin/master
