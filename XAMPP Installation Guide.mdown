@@ -1,0 +1,3 @@
+# XAMPP Installation Guide
+1. Download the latest version of XAMPP from `https://www.apachefriends.org/zh_tw/index.html`
+![XAMPP Website Image](http://imgur.com/3UKmE0S)
