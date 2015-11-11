@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development Study Club #4</title>
+
+		<meta name="description" content="Web Development Study Club #4 Class Slide">
+		<meta name="author" content="Chun You Yang">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Web Development Study Club #4</h1>
+					<h3>National Tsing Hua University</h3>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>Review</li>
+						<li>Demo: Google Map with JS</li>
+						<li>Demo: Chat room by JS</li>
+					</ul>
+				</section>
+
+				<!--      HTML      -->
+				<section>
+					<section>
+						<h2>Quick Review - HTML</h2>
+					</section>
+					<section>
+						<h2>Basic syntax</h2>
+<pre><code class="html"><tag attribute="value">content</tag></code></pre>
+					</section>
+					<section>
+						<h2>Text</h2>
+<pre><code class="html"><p>Paragraph</p></code></pre>
+<pre><code class="html">Linebreak: <br></code></pre>
+<pre><code class="html">Horizontal Rule: <hr></code></pre>
+<pre><code class="html"><b>Bold</b></code></pre>
+<pre><code class="html"><i>Italic</i></code></pre>
+						<h3>Headings</h3>
+<pre><code class="html"><h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6></code></pre>
+					</section>
+					<section>
+						<h2>Links</h2>
+<pre><code class="html"><a href="...">Link text</a></code></pre>
+						<h2>Images</h2>
+<pre><code class="html"><img src="..." alt="..." title="..."></code></pre>
+					</section>
+					<section>
+						<h2>Lists</h2>
+<pre><code class="html"><ul>
+	<li>Unorderd List</li>
+	<li>List Item</li>
+	<li>...</li>
+</ul>
+
+<ol>
+	<li>Orderd List</li>
+	<li>List Item</li>
+	<li>...</li>
+</ol></code></pre>
+					</section>
+					<section>
+						<h2>Table</h2>
+<pre><code class="html"><table>
+	<tbody>
+	    <tr>
+	        <th>0,1</th>
+	        <th>0,2</th>
+	    </tr>
+	    <tr>
+	        <td>1,1</td>
+	        <td>1,2</td>
+	    </tr>
+	    <tr>
+	        <td>2,1</td>
+	        <td>2,2</td>
+	    </tr>
+	</tbody>
+</table></code></pre>
+					</section>
+					<section>
+						<h2>Form</h2>
+<pre><code class="html"><form>
+	<input type="text"/>
+	<input type="email"/>
+	<input type="url"/>
+	<input type="password"/>
+	<textarea></textarea>
+	<input type="radio"/>
+	<input type="checkbox"/>
+	<input type="file"/>
+	<input type="submit"/>
+</form></code></pre>
+						<ul>
+							<li>name</li>
+							<li>value</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Typesetting</h2>
+							<pre><code class="html"><div>Division</div></code></pre>
+							<pre><code class="html"><span>Inline element</span></code></pre>
+							<pre><code class="html"><iframe src="...">HTML Frame</iframe></code></pre>
+					</section>
+					<section>
+						<h2>Audiovisual Media</h2>
+<pre><code class="html"><audio controls="controls">
+	<source src="...">
+</audio></code></pre>
+					</section>
+				</section>
+
+				<!--      CSS      -->
+				<section>
+					<section>
+						<h2>Quick Review - CSS</h2>
+					</section>
+					<section>
+						<h2>Using in HTML</h2>
+<pre><code class="html"><link href="..." type="text/css" rel="stylesheet"></code></pre>
+					</section>
+					<section>
+						<h2>Selector</h2>
+						<table>
+							<tr>
+								<th>Type</th>
+								<th>Meaning</th>
+								<th>Example</th>
+							</tr>
+							<tr>
+								<td>Global</td>
+								<td>Select all elements</td>
+								<td>*</td>
+							</tr>
+							<tr>
+								<td>Type</td>
+								<td>Find the same elements</td>
+								<td>h1</td>
+							</tr>
+							<tr>
+								<td>Class</td>
+								<td>Find elements with same class</td>
+								<td>.notes</td>
+							</tr>
+							<tr>
+								<td>ID</td>
+								<td>Find elements with same id</td>
+								<td>#intro</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Selector</h2>
+						<table>
+							<tr>
+								<th>Type</th>
+								<th>Meaning</th>
+								<th>Example</th>
+							</tr>
+							<tr>
+								<td>Child</td>
+								<td>Find elements that is the child of one element</td>
+								<td>li>a</td>
+							</tr>
+							<tr>
+								<td>Descendant</td>
+								<td>Find elements that is inside of one element</td>
+								<td>li a</td>
+							</tr>
+							<tr>
+								<td>Adjacent sibling</td>
+								<td>Find elements just next to another element</td>
+								<td>h1+p</td>
+							</tr>
+							<tr>
+								<td>General sibling</td>
+								<td>Find elements after another element</td>
+								<td>h1~p</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<h2>Color</h2>
+						<ul>
+							<li>color</li>
+							<li>background-color</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Text</h2>
+						<ul>
+							<li>font-family</li>
+							<li>font-size</li>
+							<li>font-weight</li>
+							<li>font-style</li>
+							<li>text-decoration</li>
+							<li>text-shadow</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Boxing</h2>
+						<ul>
+							<li>border</li>
+							<li>padding</li>
+							<li>margin</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Typesetting</h2>
+						<ul>
+							<li>position</li>
+							<li>z-index</li>
+							<li>float</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Transitions</h2>
+						<ul>
+							<li>transition-property</li>
+							<li>transition-duration</li>
+							<li>transition-timing-function</li>
+						</ul>
+					</section>
+					<section>
+						<h2>CSS Framework</h2>
+						<a href="http://getbootstrap.com/">Bootstrap</a>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Quick Review - JavaScript</h2>
+					</section>
+					<section>
+						<h2>Variable</h2>
+<pre><code class="javascript">var i=0;  // single variable
+var names=["Andy","Tom","Henry"];  // arrays</code></pre>
+					</section>
+					<section>
+						<h2>Function</h2>
+<pre><code class="javascript">function functionName([argument list]){
+    [statements;]
+    [return returnValue;]
+}</code></pre>
+<pre><code class="javascript">function showAlert(){  // no arguments
+    alert('Hello Javascript');  // popping up window
+    // no return values
+}</code></pre>
+					</section>
+					<section>
+						<h2>Communication between HTML</h2>
+<pre><code class="html"><p id="demo" onClick="changeText()">Hello World</p></code></pre>
+<pre><code class="javascript">function changeText(){
+    var demo=document.getElementById("demo");
+    demo.innerHTML="Hello Javascript!";
+    demo.style.color="yellow";
+}</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Quick Review - jQuery</h2>
+					</section>
+					<section>
+						<h2>Selector</h2>
+<pre><code class="javascript">$('p')  // select tag p
+$('#demo')  // select tags with id=”demo”
+$('.abc')  // select tags within class abc</code></pre>
+					</section>
+					<section>
+						<h2>Document ready</h2>
+<pre><code class="javascript">$(document).ready(function (){  // $(document) means this document
+    // statements goes here
+});</code></pre>
+					</section>
+					<section>
+						<h2>Comm. with HTML and CSS</h2>
+<pre><code class="javascript">$(document).ready(function(){  // when the document is ready
+    $('#demo').click(function(){  // select tag with id=”demo”
+        $(this).css('color','yellow');
+        $(this).css('background-color','blue');
+    });
+});</code></pre>
+					</section>
+				</section>
+
+
+
+				<section>
+					<section>
+						<h2>Google Map with JavaScript</h2>
+						<a href="https://developers.google.com/maps/">https://developers.google.com/maps/</a>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

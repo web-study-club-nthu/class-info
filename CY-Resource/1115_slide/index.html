@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development Study Club #5</title>
+
+		<meta name="description" content="Web Development Study Club #5 Class Slide">
+		<meta name="author" content="Chun You Yang">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Web Development<br>Study Club #5</h2>
+					<h4>National Tsing Hua University</h4>
+					<h4>2015/11/15</h4>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>Some Discussions about our club</li>
+						<li>Supplements for the frontend techs</li>
+						<li>Computer Network Basic Concepts</li>
+						<li>PHP Basics</li>
+					</ul>
+				</section>
+
+				<!--      Discussions      -->
+
+				<section>
+					<section>
+						<h2>Discussions</h2>
+						<ol>
+							<li>NCCU exchange</li>
+							<li>Food next time</li>
+							<li>Hackathon or not</li>
+						</ol>
+					</section>
+					<section>
+						<h2>1. NCCU Exchange</h2>
+						<ul>
+							<li>B:G = 1:1</li>
+							<li>Most of them are beginner</li>
+						</ul>
+						<p>Y/N?</p>
+					</section>
+					<section>
+						<h2>2. Food next time</h2>
+						<ul>
+							<li>$80 / person</li>
+							<li class="fragment highlight-red">Drink <strong>unavailable</strong>!</li>
+						</ul>
+						<p>Anything?</p>
+					</section>
+					<section>
+						<h2>3. Hackathon or not</h2>
+						<p>Activities left:</p>
+						<ul>
+							<li><a href="http://2015hackhsinchucity.punnode.com/" target="_blank">HsinChu City GOV</a></li>
+							<li><a href="http://sitcon.kktix.cc/events/hackgen-2015" target="_blank">SITCON HackGen</a></li>
+						</ul>
+						<p class="fragment">Just have fun and have food.</p>
+					</section>
+				</section>
+
+				<!--      Frontend      -->
+
+				<section>
+					<h2>Supplements for Frontend</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Webfont</h2>
+						<ul>
+							<li>Old way: Times New Roman</li>
+							<li>New BAD way: Put font file on server</li>
+							<li>New GOOD way: Use Webfont</li>
+						</ul>
+					</section>
+					<section>
+						<h2>How it work</h2>
+						<p>Generate a webpage<br>↓<br>List the words of the page<br>↓<br>Ask and generate a customade font file<br>↓<br>Use the generated font file</p>
+					</section>
+					<section>
+						<h2>Demo</h2>
+						<p><a href="https://www.google.com/fonts/">Google Fonts</a></p>
+						<p><a href="https://typekit.com/">Adobe typekit</a></p>
+						<p><a href="http://www.justfont.com/">justfont</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Using API or js lib</h2>
+					</section>
+					<section>
+						<h2>API?</h2>
+						<ul>
+							<li>Application Programming Interface</li>
+							<li>≒ Encapsulation</li>
+						</ul>
+					</section>
+					<section>
+						<h2>DEMO</h2>
+						<p><a href="https://developers.google.com/maps/?hl=zh-Tw">Google Maps API</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>PHP Basics</h2>
+					</section>
+					<section>
+						<h2>Important Notes</h2>
+						<ul>
+							<li>Case Sensitive</li>
+							<li>PHP is a program, must have an executer.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Basic Structure</h2>
+						<ul>
+							<li>Start with <b><code> &lt;?php </code></b></li>
+							<li>End with <b><code> ?&gt; </code></b></li>
+						</ul>
+<pre><code class="php">&lt;?php
+...
+?&gt;</code></pre>
+					</section>
+					<section>
+						<h2>Some other syntax</h2>
+						<h3>Comment</h3>
+<pre><code class="php">//Comment
+
+/*Multi line
+Comment*/</code></pre>
+						<h3>Statement</h3>
+						<p>End with <b><code> ; </code></b></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Variables</h2>
+					</section>
+					<section>
+						<h2>Declaration</h2>
+						<ul>
+							<li>Only one variable type: <b>Varient</b></li>
+							<li>Every variable starts with <b>$</b></li>
+						</ul>
+<pre><code class="php">$VARIABLE_NAME = VALUE;</code></pre>
+<pre><code class="php">$intNumber = 123;
+$strName = 'Hello World!';</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Display</h2>
+					</section>
+					<section>
+						<h2><code>echo</code> Statement</h2>
+						<p>≒ cout / printf / ....</p>
+<pre><code class="php">echo 'Hello world!  ';
+$year = 2015;
+$day = '11/15';
+echo $year;
+echo ', today is ' . $day;</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Operator</h2>
+					</section>
+					<section>
+						<h2>Calculation</h2>
+						<ul>
+							<li><code>+</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>+=</code></li>
+							<li><code>-</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>-=</code></li>
+							<li><code>*</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>*=</code></li>
+							<li><code>/</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>/=</code></li>
+							<li><code>%</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>%=</code></li>
+							<li><code>++</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>--</code></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Compare and Logic</h2>
+						<ul>
+							<li><code>==</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>!=</code></li>
+							<li><code>&lt;</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>&gt;</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>&lt;=</code>&nbsp;&nbsp;,&nbsp;&nbsp;<code>&gt;=</code></li>
+							<li><code>===</code>: True if the value and the datatype are same</li>
+							<li><code>!==</code>: True if the value and the datatype are not same</li>
+							<li><code>&amp;&amp;</code></li>
+							<li><code>||</code></li>
+							<li><code>!</code></li>
+						</ul>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

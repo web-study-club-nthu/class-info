@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function aaa(){
+			alert('Hello World!');
+		}
+
+		// F12 console
+		var a=document.getElementById('hello').innerHTML;
+		console.log(a);
+
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	// selector
+	// $('p'): tag;	  $('#hello'): id    $('.aaa'): class
+
+	// CSS
+	// $('p').css('property','value');
+
+		$(document).ready(function(){
+			// JS code
+			//alert('hahah');
+			
+			// changing CSS
+			$('p').click(function(){
+				//$('p').hide();
+				$('p').css('background-color','yellow');
+				$('p').css('color','blue');
+			});
+			
+			// animation
+			$('input').click(function(){
+				$('div').animate({left:'250px'});
+				$('div').fadeOut();
+			});
+
+
+		});
+
+
+	</script>
+</head>
+<body>
+	<p onclick="this.innerHTML=' JS!'">Hello World!!</p>
+	<p id="hello" onclick="aaa()">Hello!!</p>
+
+	<p>Hello JQuery!</p>
+
+	<input type="button" value="Start"/>
+	<div style="background:yellow;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

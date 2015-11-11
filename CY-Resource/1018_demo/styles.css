@@ -1,0 +1,76 @@
+.u-list{
+}
+
+.o-list{
+}
+td,th{
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+th{
+	background-color: gray;
+	text-align: center;
+}
+
+tr{
+	transition:background-color 2s, color 1s;
+	transition-timing-function: linear;
+	background-color: white;
+	color: black;
+}
+
+tr:hover{
+	background-color: black;
+	color: white;
+}
+
+table{
+	border-collapse: collapse;
+	border-width: 5px;
+	border-color: black;
+	border-style: solid;
+
+}
+
+img{
+	width: 10px;
+	height: 20px;
+}
+
+body{
+	background-image: url("bg2.jpg");
+	background-attachment: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+	font-size: 100px;
+	text-align: center;
+	font-family: Noto Sans CJK TC Black;
+}
+i{
+	font-size: 50px;
+	color: gray;
+	text-align: center;
+	font-family: Noto Sans CJK TC Black;
+}
