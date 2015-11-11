@@ -5,7 +5,7 @@
 
 2.Start the installation application. Click `Next`.
 
-![XAMPP Install Image](http://i.imgur.com/3UKmE0S.png)
+![XAMPP Install Image](http://i.imgur.com/VoF4ruQ.png)
 
 3.Check if the components are all checked. Then click `Next`.
 
