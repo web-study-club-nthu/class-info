@@ -13,7 +13,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		
+
     	<script src="pageset.js"></script>
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -184,6 +184,11 @@ Comment*/</code></pre>
 <pre><code class="php">$intNumber = 123;
 $strName = 'Hello World!';</code></pre>
 					</section>
+					<section>
+						<h2>Vars by POST and GET</h2>
+						<p><code>$_POST['...']</code><br><code>$_GET['...']</code></p>
+<pre><code class="php">$name = $_POST['email'];</code></pre>
+					</section>
 				</section>
 
 				<section>
@@ -198,6 +203,11 @@ $year = 2015;
 $day = '11/15';
 echo $year;
 echo ', today is ' . $day;</code></pre>
+					</section>
+					<section>
+						<h2>Difference between " and '</h2>
+						<p>Words begins with $ in "" will be seen as <b>variable</b>;</p>
+						<p>Words begins with $ in '' will be seen as <b>strings</b>.</p>
 					</section>
 				</section>
 
@@ -336,6 +346,10 @@ $MySecondArray = array (100,200,300,400);</code></pre>
 					</section>
 					<section>
 						<h2>Login System</h2>
+						<p>Reading Email as the ID, <br>phone number as the password. <br>If correct, echo the user's name and a message.</p>
+						<br>
+						<p>Frontend HTML and data array: <code>https://goo.gl/AO48RW</code></p>
+						<br>
 						<p id="countdown">Time left</p>
 					</section>
 				</section>
