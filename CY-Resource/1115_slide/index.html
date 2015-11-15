@@ -13,6 +13,8 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		
+    	<script src="pageset.js"></script>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
@@ -293,8 +295,48 @@ else{
 <pre><code class="php">$MyArray[0] = 100;
 $MyArray[1] = 200;
 $MyArray[2] = 300;
+$MyArray[] = 400;
 
-$MySecondArray = array (100,200,300);</code></pre>
+$MySecondArray = array (100,200,300,400);</code></pre>
+					</section>
+					<section>
+						<h2><code>count()</code></h2>
+						<p>Get the maximum index of an array.</p>
+<pre><code class="php">for($i=0; $i&lt;count($MyArray); $i++){
+	echo "$MyArray[$i] <br>";
+}</code></pre>
+					</section>
+					<section>
+						<h2><code>foreach</code> loop</h2>
+						<p>Traverse all the elements in an array automatically.</p>
+<pre><code class="php">foreach($MyArray as $value){
+	echo "$value <br>";
+}</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Function</h2>
+					</section>
+					<section>
+						<h2>Declaration</h2>
+<pre><code class="php">function FUNCTION_NAME(ARGUMENTS){
+	STATEMENTS;
+	return VALUE_VARIABLES; //optional
+}</code></pre>
+						<h2>Calling</h2>
+<pre><code class="php">FUNCTION_NAME(ARGUMENTS);</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Demo!</h2>
+					</section>
+					<section>
+						<h2>Login System</h2>
+						<p id="countdown">Time left</p>
 					</section>
 				</section>
 
