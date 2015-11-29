@@ -13,7 +13,6 @@
 }
 
 body{
-	background-image: url(bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,4 +25,14 @@ html{
 
 .glyphicon{
 	padding-right: 10px;
+}
+
+#bg-img{
+	background:url('bg.jpg') -25px -50px;
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:0;
+	height:100%;
+	background-size: calc(100% + 50px);
 }

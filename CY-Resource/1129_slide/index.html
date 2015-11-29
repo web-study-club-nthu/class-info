@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Development Study Club #5</title>
+
+		<meta name="description" content="Web Development Study Club #5 Class Slide">
+		<meta name="author" content="Chun You Yang">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    	<script src="pageset.js"></script>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Web Development<br>Study Club #6</h2>
+					<h4>National Tsing Hua University</h4>
+					<h4>2015/11/29</h4>
+					<br>
+					<h4>Maybe the last time XD</h4>
+				</section>
+
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>SQL Basic Concepts and Commands</li>
+						<li>Functions related to SQL in PHP</li>
+						<li>DEMO - Login System</li>
+					</ul>
+				</section>
+
+				<!--      SQL Concepts      -->
+
+				<section>
+					<h2>SQL Concepts</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Structure of SQL DB</h2>
+						<ul>
+							<li>Database</li>
+							<li>Table</li>
+						</ul>
+					</section>
+					<section>
+						<h2>phpMyAdmin</h2>
+						<p>Open your <a href="http://localhost/phpmyadmin/">http://localhost/phpmyadmin/</a></p>
+					</section>
+				</section>
+
+				<!--      SQL Commands      -->
+				<section>
+					<section>
+						<h2>SQL Commands</h2>
+					</section>
+					<section>
+						<h2>Create Table</h2>
+<pre><code class="sql">CREATE TABLE table_name(parameters);</code></pre>
+						<p>Parameters</p>
+						<ul>
+							<li>column name + datatype</li>
+							<li>datatype: INTEGER, TEXT...</li>
+						</ul>
+						<p>Example</p>
+<pre><code class="sql">CREATE TABLE member(name TEXT, email TEXT, phone TEXT, pass TEXT);</code></pre>
+					</section>
+
+					<section>
+						<h2>Insert Row To a Table</h2>
+<pre><code class="sql">ALTER TABLE table_name ADD COLUMN parameters;</code></pre>
+						<p>Example</p>
+<pre><code class="sql">ALTER TABLE member ADD COLUMN facebook TEXT;</code></pre>
+					</section>
+
+					<section>
+						<h2>Insert Data To a Table</h2>
+<pre><code class="sql">INSERT INTO table_name(parameters) VALUES (...);</code></pre>
+						<p>Example</p>
+<pre><code class="sql">INSERT INTO member(name,email,phone,pass)
+VALUES ('Jason', 'chunyou0830@gmail.com', '0953110830', 'chunyou0830');
+INSERT INTO member(name,email,phone,pass)
+VALUES ('Jimmy', 'cba22265886abc@yahoo.com.tw', '0986285154', '12345');
+INSERT INTO member(name,email,phone,pass)
+VALUES ('', 'empty@uhh.what', '', '');</code></pre>
+					</section>
+
+					<section>
+						<h2>Get Data From a Table</h2>
+<pre><code class="sql">SELECT column_name FROM db_name;</code></pre>
+						<p>Example</p>
+<pre><code class="sql">SELECT * FROM member;</code></pre>
+<pre><code class="sql">SELECT name, email FROM member;</code></pre>
+					</section>
+
+					<section>
+						<h2>Conditions</h2>
+						<p><code>WHERE</code></p>
+<pre><code class="sql">SELECT column_name FROM db_name WHERE condition;</code></pre>
+<pre><code class="sql">SELECT name, email FROM member WHERE name = 'Jason';</code></pre>
+						<p><code>LIKE</code></p>
+<pre><code class="sql">SELECT name, email FROM member WHERE name LIKE 'J_';</code></pre>
+						<p>Much more conditions</p>
+						<ul>
+							<li>AND</li>
+							<li>OR</li>
+							<li>BETWEEN ... AND ...</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Update Data From a Table</h2>
+<pre><code class="sql">UPDATE db_name SET col_name = ... WHERE index_col_name = ...;</code></pre>
+						<p>Example</p>
+<pre><code class="sql">UPDATE member SET name = 'Jason Yang' WHERE email = 'chunyou0830@gmail.com';</code></pre>
+					</section>
+
+					<section>
+						<h2>Delete Data From a Table</h2>
+<pre><code class="sql">DELETE FROM db_name WHERE condition;</code></pre>
+						<p>Example</p>
+<pre><code class="sql">DELETE FROM member WHERE email = 'empty@uhh.what';</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>PHP Functions</h2>
+					</section>
+
+					<section>
+						<h2>Connect with host</h2>
+<pre><code class="php">mysql_connect(HOST, USERNAME, PASSWORD);</code></pre>
+						<p>Example</p>
+<pre><code class="php">mysql_connect("localhost", "root", "");</code></pre>
+					</section>
+
+					<section>
+						<h2>Select DB</h2>
+<pre><code class="php">mysql_select_db(DB_NAME);</code></pre>
+						<p>Example</p>
+<pre><code class="php">mysql_select_db("test");</code></pre>
+					</section>
+
+					<section>
+						<h2>Query</h2>
+<pre><code class="php">mysql_query(QUERY);</code></pre>
+						<p>Example</p>
+<pre><code class="php">mysql_query("SELECT * FROM member");</code></pre>
+					</section>
+
+					<section>
+						<h2>Fetch Array</h2>
+<pre><code class="php">mysql_fetch_array(QUERY_RETURN);</code></pre>
+						<p>Example</p>
+<pre><code class="php">$result = mysql_query("SELECT * FROM member");
+$row = mysql_fetch_array($result);</code></pre>
+					</section>
+
+					<section>
+						<h2>Counting Rows</h2>
+<pre><code class="php">mysql_num_rows(QUERY_RETURN);</code></pre>
+						<p>Example</p>
+<pre><code class="php">$result = mysql_query("SELECT * FROM member");
+$row_nums = mysql_num_rows($result);</code></pre>
+					</section>
+
+					<section>
+						<h2>Supplement - MD5</h2>
+						<p>Just a hashing function.</p>
+<pre><code class="php">md5(STRING);</code></pre>
+						<p>Example</p>
+<pre><code class="php">$result = md5("myPassword");</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Demo!</h2>
+					</section>
+					<section>
+						<h2>Login System</h2>
+						<p>Write a <code>conn.php</code> to recieve data posted from <a href="https://github.com/web-study-club-nthu/class-info/blob/master/Demo%20Files/login.html"><code>login.html</code></a>. Judge the status with data in DB. <br><br>The password should be saved in MD5. <br><br>Situations: </p>
+						<ul>
+							<li>Login Success</li>
+							<li>Login Failed - Password incorrect</li>
+							<li>Login Failed - User not exist</li>
+						</ul>
+						<br>
+						<p id="countdown">Time left</p>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
