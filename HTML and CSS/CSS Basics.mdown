@@ -1,10 +1,10 @@
-#CSS Basics
+# CSS Basics
 
-##What is CSS?
+## What is CSS?
 * CSS = Cascading Style Sheets
 * To make HTML beautiful.
 
-##Syntax Basics
+## Syntax Basics
 * A CSS document is made up by **CSS selector** and **declarations**. Declaration is made up by **attribute** and a **value**.
 * A CSS rule format:
     * `p` = selector
@@ -38,7 +38,7 @@ p {
 </style>
 ```
 
-##CSS Selector
+## CSS Selector
 | Type | Meaning | Example |
 | ---- | ------- | ------- |
 |Global|Select all elements|`*`|
@@ -77,7 +77,7 @@ p {
     * `:focus`: The focus point is on the element.
     * `:visited`: Have been visited the link.
 
-##Color
+## Color
 * `color`: The text color in the element. Value can be:
     * RGB: `rgb(100,100,90)`
     * RGBA: `rgba(1,2,3,0.5)`
@@ -90,8 +90,8 @@ p {
     * Name: `red`
 * `opacity`: The opacity of the color. Value can be `0`~`1`
 
-##Text
-###Basics
+## Text
+### Basics
 * `font-family`: The font of the text.
 * `font-size`: The size of the text. Value can be
     * px: Pixel on screen
@@ -107,7 +107,7 @@ p {
     * `line-through`
 * `text-shadow`: The shadow of the text. Value **should** be: `horizontal vertical (blur) color`
 
-###Spacing and Align
+### Spacing and Align
 * Value usually use `em`.
 * `line-height`: The space between lines.
 * `letter-spacing`: Space between letters (alphabets).
@@ -118,7 +118,7 @@ p {
     * `center`
     * `justify`
 
-##Boxing
+## Boxing
 * `width`, `height`
 * `border`: The line.
     * `border-width`
@@ -139,13 +139,13 @@ p {
 └---------┘
 ```
 
-##List, Table and Form
-###List 
+## List, Table and Form
+### List 
 * `list-style-type`
     * In `ul`, value can be: `disc`, `circle`, `square`
     * In `ol`, value can be: `decimal`, `decimal-leading-zero`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`
 
-###Table
+### Table
 * `width`
 * `padding`
 * `border`
@@ -154,15 +154,15 @@ p {
 * `:hover`
 * `border-collapse`: To let every td shares the border or have their own border. Valie can be `collapse` or `separate`.
 
-###Form
+### Form
 * `width`
 * `color`
 * `background-color`
 * `border`, `border-radius`
 * `padding`
 
-##Images
-###Size and Positioning
+## Images
+### Size and Positioning
 * `width`, `height`
 * `vertical-align`: The vertical align for images. Value can be
     * `baseline`
@@ -170,18 +170,18 @@ p {
     * `text-bottom`
     * Much more.
 
-###Background Images
+### Background Images
 * `background-image`: Vale should be `url("...")`
 * `background-repeat`: Value should be `repeat`, `repeat-x`, `repeat-y`, `no-repeat`
 * `background-attachment`: To let the background fixed or scrolled while the page was scrolled. Value should be `fixed` or `scroll`.
 * `background-position`: Value should be `left/center/right` and `top/center/bottom`
 
-##Typesetting
-###Concepts
+## Typesetting
+### Concepts
 * Block elements in HTML: `<h1>`, `<p>`, `<ul>`, `<li>`...
 * Inline elements in HTML: `<img>`, `<b>`, `<i>`...
 
-###Position
+### Position
 * `position`: The positioning method for elements. Value can be:
     * `static`: Default positions. For block elements, every element possesses one line.
     ```
@@ -229,7 +229,7 @@ p {
 ```
 * `clear`: The side of the element will be cleared (disallow other elements to appear) if the value is given. Value can be `left, `right`, `both`, `none`.
 
-##Transition
+## Transition
 * `transition-property`: The attribute to transition. Value can be any attribute.
 * `transition-duration`: The duration of the transition animation. Value should be `*s`
 * `transition`: The simplified attribute. Value should be `property duration`, and we can have multiple properties one time.
@@ -239,6 +239,6 @@ p {
     * `ease-out`: same > same > slow
     * `ease-in-out`: slow > same > slow (default)
 
-##Using CSS Framework
+## Using CSS Framework
 * A Framework is a fully finished CSS.
 * [Bootstrap](http://getbootstrap.com/)
