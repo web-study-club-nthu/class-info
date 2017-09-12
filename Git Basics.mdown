@@ -1,6 +1,6 @@
-#Git Basics
+# Git Basics
 
-##What is Git?
+## What is Git?
 * Git is a **Distributed Version Control System**. -> Control your codes.
     * Version Control System: Control your changes to your code.
     * Distributed: Everyone can change your code.
@@ -26,27 +26,27 @@ final_bug_fix_last.cpp
     * History Protection: Everyone has a hash id when committing. Can nearly **never** be changed.
     * Pluggable merge strategies: Automatically merge algebra.
 
-##What is GitHub?
+## What is GitHub?
 * Usually, Git works locally. What if we need to work together?
 * A remote server is needed. -> GitHub
 
-##Basic Concepts and Commands
-###Repository
+## Basic Concepts and Commands
+### Repository
 * Like a folder.
 
-###Commit
+### Commit
 * To build a new version.
 * Need some log.
 
-###Sync
+### Sync
 * Push: Send the local commits to server.
 * Pull: Get the remote commits to local.
 * In GitHub for Windows, there will be only one button `Sync` for the actions below.
 
-##Software Installation
+## Software Installation
 Ref: [Learn-Git-in-30-days](https://github.com/doggy8088/Learn-Git-in-30-days/blob/master/docs/02%20%E5%9C%A8%20Windows%20%E5%B9%B3%E5%8F%B0%E5%BF%85%E8%A3%9D%E7%9A%84%E4%B8%89%E5%A5%97%20Git%20%E5%B7%A5%E5%85%B7.markdown)
 
-##Operating with GitHub for Windows
+## Operating with GitHub for Windows
 * Setting up the environment
     1. Build a new repo on GitHub.
     2. **Clone** (Copy) the repo to local.
