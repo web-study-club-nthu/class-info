@@ -1,10 +1,10 @@
-#HTML Basics
+# HTML Basics
 
-##What is HTML?
+## What is HTML?
 * HTML = Hyper Text Markup Language
 * Construct what you see in a web page.
 
-##Syntax Basics
+## Syntax Basics
 * A HTML document is made up by **HTML elements**.
 * HTML elements format:
 ```
@@ -29,7 +29,7 @@
 <!--Some comments-->
 ```
 
-##Document Structure
+## Document Structure
 * A basic HTML document will look like this:
 ```
 <!DOCTYPE html>
@@ -47,7 +47,7 @@
     * `id`: The ***unique*** name of the element.
 
 ## Texts
-###Paragraphs
+### Paragraphs
 * Paragraph: `<p>`
 ```
 <p>Content</p>
@@ -60,7 +60,7 @@
 ```
 <p>This is a paragraph <hr> There's a horizontal line up there.</p>
 ```
-###Paragraph Styling
+### Paragraph Styling
 * Bold: `<b>`(stylistically offset) or `<strong>`(stronger emphasis)
 ```
 <p>The word <b>BOLD</b> will be very <strong>black</strong>.</p>
@@ -69,7 +69,7 @@
 ```
 <p>The word <i>Italic</i> is <em>not straight</em>.</p>
 ```
-###Headings
+### Headings
 * Heading = Title
 * Lv.1 `h1` ~ Lv.6 `h6`
 ```
@@ -81,7 +81,7 @@
 <h6>Heading 6</h6>
 ```
 
-##Links
+## Links
 * Link: `<a>`
 * Hyperlink REFerence attribute: `href`
 ```
@@ -99,7 +99,7 @@
 <a href="http://www.google.com" target="_self">Google in current window</a>
 ```
 
-##Images
+## Images
 * Image: `<img>`
 * Image Source attribute: `src`
 ```
@@ -114,7 +114,7 @@
 <img src="http://bryn.me/wp-content/uploads/2008/09/tatoo-html.jpg" alt="HTML Tatoo" title="HTML Tatoo (Mouse Hover)">
 ```
 
-##Lists
+## Lists
 * Orderd list (1,A,a...): `<ol>`
     * Type attribute: `type`
         * `1`: 1,2,3...
@@ -137,7 +137,7 @@
 </ul>
 ```
 
-##Table
+## Table
 * Table: `<table>`
 * Row by row first, then column(data) by column
 * Table Row: `<tr>`
@@ -177,7 +177,7 @@
 </table>
 ```
 
-##Form
+## Form
 * A form: `<form>`
     * Action attribute: `action`
     * Method attribute: `method`
@@ -247,7 +247,7 @@
 </form>
 ```
 
-##Typesetting
+## Typesetting
 * Division: `<div>`
 * Inline element: `<span>`
 * HTML Frame: `<iframe>`
@@ -261,7 +261,7 @@
 <iframe src="http://heyou.tw/" height="500px" width="1000px">
 ```
 
-##Audiovisual Media
+## Audiovisual Media
 * Video: `<video>`
 * Audio: `<audio>`
     * Source attribute: `src`
