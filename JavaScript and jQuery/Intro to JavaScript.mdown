@@ -1,4 +1,4 @@
-#PART I - Introduction to Javascript 
+# PART I - Introduction to Javascript 
 
 Javascript is a powerful language in web applications. It's the programming language of HTML and other web applications. Being easy to learn, we can manipulate HTML and CSS attributes with few lines of codes. In this introduction, we’ll learn the fundamental structure of this language as well as some methods to communicate between Javascript and DOM/CSS attributes. For further reference, just google ”javascript tutorial” and you’ll definitely find tons of examples and tutorials. 
 
@@ -11,7 +11,7 @@ We now presume you all have learned other programing language such as C/C++ befo
 Please first take a look at these fancy(?) applications on this page: [http://www.w3schools.com/js/js_intro.asp](http://www.w3schools.com/js/js_intro.asp)
 
 
-##A. Variable declarations and Data Types
+## A. Variable declarations and Data Types
 
 To declare a variable to use, we use the `var` keyword, noting that even if you don’t use this keyword is fine, but with some difference in terms of scope.
 
@@ -26,7 +26,7 @@ There are several different data types, but we are able to change their type any
 * number: floating points; real numbers
 * Boolean: true/false
 
-##B. Implementing Your Own Functions
+## B. Implementing Your Own Functions
 
 Before we really go into the way we construct functions, we make a remark that the basic control flows such as if-else, switch-case, and while statements are exactly the same as those in C/C++. We’re not go into details on that; however, we want you to know the for-each loop statement which is a very powerful tool: http://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript .
 
@@ -68,9 +68,9 @@ return sum;
 console.log(document.getElementById(“demo”)); 
 ```
 
-##C. Communication between HTML tags/ CSS attributes through Javascript
+## C. Communication between HTML tags/ CSS attributes through Javascript
 
-###(i) Fetching HTML tag properties (also CSS!)
+### (i) Fetching HTML tag properties (also CSS!)
 
 We’ll introduce the basic process/statements to grab data from HTML DOM. If your HTML tags are well-structured, then it’s easy and convenient to fetch properties of tags with specific id.
 
